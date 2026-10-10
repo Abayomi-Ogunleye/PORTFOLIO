@@ -98,6 +98,13 @@ dl{margin-top:2rem;border-top:1px solid var(--line)}
 dl div{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
 dt{color:var(--mute)} dd{text-align:right}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+.track{align-items:flex-start}
+.card{flex:0 0 auto}
+.card .frame{height:min(62vh,440px);width:auto}
+.card img.art{height:100%;width:auto;aspect-ratio:auto;display:block;max-width:86vw;object-fit:contain}
+.card div.art{width:min(70vw,330px)}
+.detail .frame{aspect-ratio:auto}
+.detail img.art{height:auto}
 </style>
 </head>
 <body>
@@ -120,7 +127,7 @@ dt{color:var(--mute)} dd{text-align:right}
   To use a real image: replace <div class="art" ...></div> with <img class="art" src="images/yourfile.jpg" alt="Description">
   =================================== -->
   <section id="works">
-    <div class="works-head wrap"><h2>Selected work</h2><span class="mono">Swipe / scroll →</span></div>
+    <div class="works-head wrap"><h2>Recent Work</h2><span class="mono">Swipe / scroll →</span></div>
     <div class="track">
  
       <a class="card" href="#work-1">
