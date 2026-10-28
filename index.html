@@ -105,8 +105,23 @@ dt{color:var(--mute)} dd{text-align:right}
 .card div.art{width:min(70vw,330px)}
 .detail .frame{aspect-ratio:auto}
 .detail img.art{height:auto}
+.scroll-btn{background:none;border:0;padding:.3rem .2rem;font:inherit;letter-spacing:inherit;text-transform:inherit;color:var(--mute);cursor:pointer;transition:color .2s}
+.scroll-btn:hover{color:var(--accent)}
+.scroll-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1 em{
+  background:linear-gradient(90deg,var(--accent),var(--accent),#ff9a3c,#f5c542);
+  background-size:300% 100%;
+  background-position:0 0;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  padding-right:.08em;
+  transition:background-position .8s ease;
+}
+h1 em:hover{background-position:100% 0}
+
 </style>
 </head>
+
 <body>
  
 <header class="wrap">
@@ -127,24 +142,23 @@ dt{color:var(--mute)} dd{text-align:right}
   To use a real image: replace <div class="art" ...></div> with <img class="art" src="images/yourfile.jpg" alt="Description">
   =================================== -->
   <section id="works">
-    <div class="works-head wrap"><h2>Recent Work</h2><span class="mono">Swipe / scroll →</span></div>
-    <div class="track">
+<div class="works-head wrap"><h2>Recent Work</h2><span class="mono"><button class="scroll-btn" data-dir="1">Swipe / scroll →</button></span></div>    <div class="track">
  
       <a class="card" href="#work-1">
         <div class="frame"><img class="art" src="assets\coeus paid_2.png" /></div>
         <div class="meta"><b>Tutorial Class Flyer</b><small>10 · 2026</small></div>
       </a>
- 
+
       <a class="card" href="#work-2">
-        <div class="frame"><img class="art" src="assets\compssa_leadershipsummit_1.png" ></div>
-        <div class="meta"><b>Leadership Summit Flyer</b><small>05 · 2026</small></div>
+        <div class="frame"><img class="art" src="assets\kivuli social media 1.png" ></div>
+        <div class="meta"><b>Kivuli Coffee Social Campaign</b><small>10 · 2026</small></div>
       </a>
  
       <a class="card" href="#work-3">
-        <div class="frame"><img class="art" src="assets\WHD2.png"></div>
-        <div class="meta"><b>World Hypertension Day Awareness Flyer</b><small>05 · 2025</small></div>
+        <div class="frame"><img class="art" src="assets\compssa_leadershipsummit_1.png" ></div>
+        <div class="meta"><b>Leadership Summit Flyer</b><small>05 · 2026</small></div>
       </a>
- 
+
       <a class="card" href="#work-4">
         <div class="frame"><img class="art" src="assets\debate_teams_1.png"></div>
         <div class="meta"><b>Debate Teams Flyer</b><small>05 · 2025</small></div>
@@ -184,9 +198,9 @@ dt{color:var(--mute)} dd{text-align:right}
   <img class="portrait" src="assets\headshot.jpg" alt="Abayomi Ogunleye">
 </div>
     <div>
-      <p>I’m Abayomi, a graphic designer in Lagos. I build identities, posters and campaigns that are simple on the surface and deliberate underneath.</p>
+      <p>I’m <em>Abayomi</em>, a graphic designer in Lagos. I build identities, posters and campaigns that are simple on the surface and deliberate underneath.</p>
       <p>I run APEX Design, and I’m an Anatomy student at the University of Lagos, which is probably why I care so much about structure, proportion and how things fit together. Every project starts with a question: what should people feel in the first second?</p>
-      <div class="tools mono"><span>CorelDRAW</span><span>Photoshop</span><span>Branding</span><span>Print</span><span>Social</span></div>
+      <div class="tools mono"><span>CorelDRAW</span><span>Photoshop</span><span>Canva</span><span>Branding</span><span>Print</span><span>Social</span></div>
     </div>
   </section>
  
@@ -221,17 +235,17 @@ dt{color:var(--mute)} dd{text-align:right}
   </div>
 </div>
  
-<div class="modal" id="work-3">
+<div class="modal" id="work-2">
   <div class="wrap">
-    <div class="bar mono"><span>03 / World Hypertension Day Flyer</span><a class="close" href="#works">Close ✕</a></div>
+    <div class="bar mono"><span>02 / Kivuli Coffee: Social Campaign</span><a class="close" href="#works">Close ✕</a></div>
     <div class="detail">
-      <div class="frame"><img class="art" src="assets\WHD2.png" style="--a:#1d2b3a;--b:#0d1620;--c:#e8c15a;--d:#5d7fa3"></div>
+      <div class="frame"><img class="art" src="assets\kivuli social media 1.png" style="--a:#1d2b3a;--b:#0d1620;--c:#e8c15a;--d:#5d7fa3"></div>
       <div>
-        <h3>World Hypertension Day Flyer</h3>
-        <p>An awareness flyer for World Hypertension Day. The goal was to make a serious health message clear and easy to read at a glance. A strong headline leads, followed by key facts and a clear call to action, with a calm colour palette to keep the tone trustworthy rather than alarming.</p>
+        <h3>Kivuli Coffee: Social Campaign</h3>
+        <p>A social media post for Kivuli Coffee, a Kenyan brand entering the UK market. The brief was to move the brand from a local look to a premium international one. The headline “Sip globally. Rooted locally.” carries the brand’s “glocal” positioning, set in bold type across a diagonal band. A latte-art cup and scattered beans give the post a warm, premium feel, and the cream and coffee-brown palette keeps it consistent with the brand identity.</p>
         <dl class="mono">
-          <div><dt>Client</dt><dd>Class Pionexa</dd></div>
-          <div><dt>Role</dt><dd>Flyer design, layout and typography</dd></div>
+          <div><dt>Client</dt><dd>Kivuli Coffee (Spec Work)</dd></div>
+          <div><dt>Role</dt><dd>Social media design, layout and typography</dd></div>
           <div><dt>Tools</dt><dd>CorelDRAW</dd></div>
           <div><dt>Year</dt><dd>2026</dd></div>
         </dl>
@@ -240,9 +254,9 @@ dt{color:var(--mute)} dd{text-align:right}
   </div>
 </div>
  
-<div class="modal" id="work-2">
+<div class="modal" id="work-3">
   <div class="wrap">
-    <div class="bar mono"><span>02 / Social Campaign</span><a class="close" href="#works">Close ✕</a></div>
+    <div class="bar mono"><span>03 / Social Campaign</span><a class="close" href="#works">Close ✕</a></div>
     <div class="detail">
       <div class="frame"><img class="art" src="assets\compssa_leadershipsummit_1.png" style="--a:#d9d0bd;--b:#b9ad94;--c:#121212;--d:#e5391f"></div>
       <div>
@@ -391,6 +405,23 @@ dt{color:var(--mute)} dd{text-align:right}
     </div>
   </div>
 </div>
-
+<script>
+(function(){
+  var t=document.querySelector('.track');
+  if(!t)return;
+  document.querySelectorAll('.scroll-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var dir=+b.dataset.dir;
+      var c=t.querySelector('.card');
+      var step=c.offsetWidth+parseFloat(getComputedStyle(t).columnGap||16);
+      var atEnd=t.scrollLeft+t.clientWidth>=t.scrollWidth-4;
+      if(dir>0&&atEnd){t.scrollTo({left:0,behavior:'smooth'})}
+      else if(dir<0&&t.scrollLeft<4){t.scrollTo({left:t.scrollWidth,behavior:'smooth'})}
+      else{t.scrollBy({left:dir*step,behavior:'smooth'})}
+      t.dispatchEvent(new Event('pointerdown'));
+    });
+  });
+})();
+</script>
 </body>
 </html>
